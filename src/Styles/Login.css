@@ -1,0 +1,167 @@
+/* CSS untuk styling form login */
+.min-h-screen {
+    /* Style untuk mengatur tinggi minimal layar */
+    height: 100vh;
+  }
+  
+  .flex {
+    /* Style untuk mengatur tata letak flex */
+    display: flex;
+  }
+  
+  .items-center {
+    /* Style untuk mengatur item tengah secara vertikal */
+    align-items: center;
+  }
+  
+  .justify-center {
+    /* Style untuk mengatur posisi horizontal menjadi tengah */
+    justify-content: center;
+  }
+  
+  .bg-blue-500 {
+    /* Style untuk warna background biru */
+    background-color: #3498db;
+  }
+  
+  .bg-white {
+    /* Style untuk warna background putih pada form */
+    background-color: #fff;
+  }
+  
+  .shadow-md {
+    /* Style untuk shadow (bayangan) pada form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded {
+    /* Style untuk border rounded pada elemen */
+    border-radius: 0.25rem;
+  }
+  
+  .px-8 {
+    /* Style untuk padding horizontal */
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .py-2 {
+    /* Style untuk padding vertikal */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .text-gray-700 {
+    /* Style untuk warna teks abu-abu tua */
+    color: #4a5568;
+  }
+  
+  .text-sm {
+    /* Style untuk ukuran teks kecil */
+    font-size: 0.875rem;
+  }
+  
+  .font-bold {
+    /* Style untuk teks bold */
+    font-weight: 700;
+  }
+  
+  .mb-2 {
+    /* Style untuk margin bawah */
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-4 {
+    /* Style untuk margin bawah */
+    margin-bottom: 1rem;
+  }
+  
+  .mb-6 {
+    /* Style untuk margin bawah */
+    margin-bottom: 1.5rem;
+  }
+  
+  .flex {
+    /* Style untuk tata letak flex */
+    display: flex;
+  }
+  
+  .items-center {
+    /* Style untuk item tengah secara vertikal */
+    align-items: center;
+  }
+  
+  .justify-between {
+    /* Style untuk posisi horizontal antara elemen */
+    justify-content: space-between;
+  }
+  
+  .hover\:underline:hover {
+    /* Style untuk efek underline pada hover */
+    text-decoration: underline;
+  }
+  
+  /* Style untuk tombol Submit */
+  .bg-blue-500 {
+    /* Style untuk warna latar belakang tombol */
+    background-color: #3498db;
+  }
+  
+  .hover\:bg-blue-700:hover {
+    /* Style untuk warna latar belakang saat tombol dihover */
+    background-color: #2779bd;
+  }
+  
+  .text-white {
+    /* Style untuk warna teks putih pada tombol */
+    color: #fff;
+  }
+  
+  .font-bold {
+    /* Style untuk teks bold */
+    font-weight: 700;
+  }
+  
+  .py-2 {
+    /* Style untuk padding vertikal pada tombol */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .px-4 {
+    /* Style untuk padding horizontal pada tombol */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .rounded {
+    /* Style untuk border rounded pada tombol */
+    border-radius: 0.25rem;
+  }
+  
+  .focus\:outline-none:focus {
+    /* Style untuk menghilangkan outline pada focus */
+    outline: none;
+  }
+  
+  .focus\:shadow-outline:focus {
+    /* Style untuk shadow pada focus */
+    box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  }
+  
+  /* Style untuk teks login berhasil */
+  .text-green-500 {
+    /* Style untuk warna teks hijau */
+    color: #48bb78;
+  }
+  
+  .text-sm {
+    /* Style untuk ukuran teks kecil */
+    font-size: 0.875rem;
+  }
+  
+  .mt-4 {
+    /* Style untuk margin atas */
+    margin-top: 1rem;
+  }
+  
