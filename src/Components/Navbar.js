@@ -31,7 +31,11 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
+<<<<<<< HEAD
           SelfCare
+=======
+          Health <span className="navbar-sign">+</span>
+>>>>>>> c27c9b3bc2e1b3599775ce13479fdad6de7ea723
         </Link>
       </h1>
 
