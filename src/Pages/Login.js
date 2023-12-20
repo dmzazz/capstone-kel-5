@@ -15,7 +15,6 @@
 import React, { useState } from "react";
 import "../Styles/Login.css";
 
-
 // const Login = () => {
 //   const [username, setUsername] = useState("");
 //   const [password, setPassword] = useState("");
@@ -83,8 +82,6 @@ import "../Styles/Login.css";
 
 // export default Login;
 
-
-
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -131,24 +128,21 @@ const Login = () => {
           />
         </div>
         <div className="flex items-center justify-between">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
             Submit
           </button>
           {formComplete && (
             <p className="text-green-500 text-sm">
-              Login berhasil!{' '}
-              <a href="/balik" className="text-green-500 underline hover:text-green-700">
+              Login berhasil!{" "}
+              <a href="/" className="text-green-500 underline hover:text-green-700">
                 ke halaman beranda
               </a>
             </p>
           )}
         </div>
         <p className="text-sm mt-4">
-          Login sebagai admin klik{' '}
-          <a href="/admin" className="text-blue-500 hover:underline">
+          Login sebagai admin klik{" "}
+          <a href="/adminlogin" className="text-blue-500 hover:underline">
             here
           </a>
         </p>
@@ -158,8 +152,6 @@ const Login = () => {
 };
 
 export default Login;
-
-
 
 // import React, { useState } from "react";
 // import { useNavigate } from "react-router-dom";

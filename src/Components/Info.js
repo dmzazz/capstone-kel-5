@@ -8,7 +8,6 @@ function Info() {
     <div className="info-section" id="services">
       <div className="info-title-content">
         <h3 className="info-title">
-<<<<<<< HEAD
           <span>Apa yang dapat kami lakukan</span>
         </h3>
         <p className="info-description">
@@ -17,16 +16,6 @@ function Info() {
         Kami memberikan saran medis, resep dan memudahkan pencatatan catatan kesehatan Anda. Tujuan kami 
         adalah memberikan layanan kesehatan sesuai permintaan yang menjawab kebutuhan kesehatan mental Anda, 
         semuanya dengan kenyamanan di ujung jari Anda.
-=======
-          <span>What We Do</span>
-        </h3>
-        <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
->>>>>>> c27c9b3bc2e1b3599775ce13479fdad6de7ea723
         </p>
       </div>
 

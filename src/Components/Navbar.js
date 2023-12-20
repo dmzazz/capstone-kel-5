@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCommentDots,
-  faBars,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCommentDots, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -30,13 +26,7 @@ function Navbar() {
   return (
     <div className="navbar-section">
       <h1 className="navbar-title">
-        <Link to="/">
-<<<<<<< HEAD
-          SelfCare
-=======
-          Health <span className="navbar-sign">+</span>
->>>>>>> c27c9b3bc2e1b3599775ce13479fdad6de7ea723
-        </Link>
+        <Link to="/">SelfCare</Link>
       </h1>
 
       {/* Desktop */}
@@ -68,14 +58,11 @@ function Navbar() {
         </li>
       </ul>
 
-      <button
-        className="navbar-btn"
-        type="button"
-        disabled={isButtonDisabled}
-        onClick={handleChatBtnClick}
-      >
-        <FontAwesomeIcon icon={faCommentDots} /> Live Chat
-      </button>
+      <Link to="/login">
+        <button className="navbar-btn" type="button">
+          Login
+        </button>
+      </Link>
 
       {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
@@ -119,11 +106,7 @@ function Navbar() {
 
       {/* Hamburger Icon */}
       <div className="mobile-nav">
-        <FontAwesomeIcon
-          icon={faBars}
-          onClick={openNav}
-          className="hamb-icon"
-        />
+        <FontAwesomeIcon icon={faBars} onClick={openNav} className="hamb-icon" />
       </div>
     </div>
   );
