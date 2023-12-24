@@ -15,27 +15,27 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Welcome to Health Plus, your trusted partner for accessible and
-          personalized healthcare. Our expert doctors offer online consultations
-          and specialized services, prioritizing your well-being. Join us on
-          this journey towards a healthier you.
+          Selamat datang di Health Plus, mitra tepercaya Anda untuk layanan kesehatan yang terjangkau dan personal. 
+          Dokter-dokter ahli kami menawarkan konsultasi online dan layanan khusus, dengan prioritas utama pada kesejahteraan Anda. 
+          Bergabunglah dengan kami dalam perjalanan ini menuju diri yang lebih sehat bagi Anda.
         </p>
 
         <h4 className="about-text-title">Your Solutions</h4>
 
         <SolutionStep
-          title="Choose a Specialist"
-          description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
+          title="Pilih Dokter"
+          description="
+          Temukan spesialis yang sempurna untuk Anda dan booking dengan mudah di Health Plus. Dokter-dokter ahli mengutamakan kesehatan Anda, menawarkan perawatan yang disesuaikan."
         />
 
         <SolutionStep
-          title="Make a Schedule"
-          description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
+          title="Membuat Judul"
+          description="Pilih dokter yang akan menjadi konsultor anda, dan biarkan tim medis kami yang berdedikasi memastikan kesejahteraan Anda dengan perawatan yang dipersonalisasi."
         />
 
         <SolutionStep
-          title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
+          title="Temukan Solusi"
+          description="Dokter-dokter dan spesialis berpengalaman kami hadir untuk memberikan saran ahli dan merancang rencana perawatan yang dipersonalisasi, membantu Anda mencapai kesehatan terbaik yang memungkinkan."
         />
       </div>
     </div>

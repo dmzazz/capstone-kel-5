@@ -46,11 +46,11 @@ function Navbar() {
             About
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#reviews" className="navbar-links">
             Reviews
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="#doctors" className="navbar-links">
             Doctors

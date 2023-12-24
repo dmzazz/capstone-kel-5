@@ -24,7 +24,7 @@ const Dashboard = () => {
         Swal.fire({
             icon: 'success',
             title: 'Deleted!',
-            text: `Employee data has been deleted.`,
+            text: `Data  doctor has been deleted.`,
             showConfirmButton: false,
             timer: 1500,
           });

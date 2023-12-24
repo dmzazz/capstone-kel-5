@@ -25,24 +25,21 @@ function BookAppointment() {
         <h3 className="ba-title">
           <span>Why Choose Health</span>
         </h3>
-        <p className="ba-description">
-          Discover the reasons to choose Health Plus for your healthcare needs.
-          Experience expert care, convenience, and personalized solutions,
-          making your well-being our top priority. Join us on a journey to
-          better health and a happier life.
+        <p className="ba-description">          
+        Temukan alasan memilih Health Plus untuk kebutuhan kesehatan Anda. 
+        Rasakan perawatan ahli, kemudahan, dan solusi yang dipersonalisasi, menjadikan kesejahteraan Anda 
+        sebagai prioritas utama kami. Bergabunglah dengan kami dalam perjalanan menuju kesehatan yang lebih baik 
+        dan kehidupan yang lebih bahagia.
         </p>
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Dokter professional terbaik
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Emergency Care
-        </p>
-        <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> 24/7 Support Live Chat
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Sistem informasi jelas
         </p>
         <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} />  Jadwal Mudah dan Cepat
         </p>
 
         <button

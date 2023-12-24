@@ -21,31 +21,29 @@ function Info() {
 
       <div className="info-cards-content">
         <InformationCard
-          title="Emergency Care"
-          description="Our Emergency Care service is designed to be your reliable support
-            in critical situations. Whether it's a sudden illness, injury, or
-            any medical concern that requires immediate attention, our team of
-            dedicated healthcare professionals is available 24/7 to provide
-            prompt and efficient care."
+          title="Knowledge Psicologic"
+          description="Sistem Informasi Psikologi kami didesain untuk menjadi sumber dukungan yang handal
+          dalam mengelola informasi kesehatan mental.
+          Baik itu untuk perencanaan sesi konseling, atau memantau perkembangan klien, 
+          tim kami yang berdedikasi siap membantu 24/7 untuk memastikan layanan yang efisien dan terpercaya."
           icon={faTruckMedical}
         />
 
         <InformationCard
-          title="Heart Disease"
-          description="Our team of experienced cardiologists and medical experts use
-            state-of-the-art technology to assess your cardiovascular health and
-            design personalized treatment plans. From comprehensive screenings
-            to advanced interventions, we are committed to helping you maintain
-            a healthy heart and lead a fulfilling life."
+          title="Professional Doctor"
+          description="Tim ahli psikologi berpengalaman kami menggunakan metode terapi terkini dan teknik evaluasi
+          untuk memahami serta mendukung kesejahteraan mental Anda secara menyeluruh.
+          Dengan keahlian dalam konseling individu,
+          kami berkomitmen membantu Anda mengatasi tantangan mental
+          dengan pengertian dan perencanaan yang tepat."
           icon={faHeartPulse}
         />
 
         <InformationCard
-          title="Dental Care"
-          description="Smile with confidence as our Dental Care services cater to all your
-            oral health needs. Our skilled dentists provide a wide range of
-            treatments, from routine check-ups and cleanings to cosmetic
-            procedures and restorative treatments."
+          title="Schedule Concultation"
+          description="Tim kami memberikan penerapan jadwal dengan pengelolaan baik
+          sesuai dengan permintaan client. Tim kami berdedikasi tinggi sebagai jembatan untuk para client
+          dengan dokter tim kami agar jadwal dapat terlaksana dengan sebaiknya"
           icon={faTooth}
         />
       </div>
