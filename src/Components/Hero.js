@@ -38,12 +38,11 @@ function Hero() {
         <div className="text-section">
           <p className="text-headline">Jaga Kesehatan Mentalmu ❤️</p>
           <h2 className="text-title">
-          Pandangan baru untuk kesehatan pikiranmu
+          Bersama Menuju Kesejahteraan
           </h2>
           <p className="text-descritpion">
-          Temui kesehatan mental yang lebih baik dengan berbicara kepada dokter ahli.
-           Dapatkan saran, resep dan catatan kesehatan Anda dengan mudah. Pengalaman layanan kesehatan 
-           sesuai permintaan, semua di ujung jari Anda.
+          
+"Kami berkomitmen untuk mendukung Anda dalam perjalanan kesehatan mental Anda. Mulai hari ini dengan langkah kecil menuju perubahan yang positif."
           </p>
           <button
             className="text-appointment-btn"
