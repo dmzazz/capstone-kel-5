@@ -36,7 +36,7 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">Jaga Kesehatan Mentalmu ❤️</p>
+          <p className="text-headline">SelfCare❤️</p>
           <h2 className="text-title">
           Bersama Menuju Kesejahteraan
           </h2>
@@ -51,22 +51,6 @@ function Hero() {
           >
             <FontAwesomeIcon icon={faCalendarCheck} /> Jadwalkan Konsultasi
           </button>
-          <div className="text-stats">
-            <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Menerima Pasien</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>50+</p>
-              <p>Dokter Ahli</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>10+</p>
-              <p>Pengalaman</p>
-            </div>
-          </div>
         </div>
 
         <div className="hero-image-section">
