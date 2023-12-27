@@ -108,7 +108,7 @@ function AppointmentForm() {
         </Link>
         <h1 className="legal-siteTitle">
           <Link to="/" className="fw-bold">
-            Self<span className="legal-siteSign">Care</span>
+            SelfCare<span className="legal-siteSign"></span>
           </Link>
         </h1>
         <div className="d-flex flex-column align-items-center">

@@ -65,7 +65,7 @@ function LegalDocs() {
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Health+. Seluruh hak cipta dilindungi.</p>
+        <p>© 2023 Health+. Seluruh hak cipta dilindungi.</p>
       </div>
     </div>
   );
