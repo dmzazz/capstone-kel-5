@@ -21,6 +21,10 @@ const Login = () => {
         );
       });
 
+      if (user.length === 0) {
+        toast.error("Login failed");
+      }
+
       localStorage.setItem(
         "user",
         JSON.stringify({ ...user[0], password: "" })

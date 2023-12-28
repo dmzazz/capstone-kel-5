@@ -20,6 +20,10 @@ const AdminLogin = () => {
         );
       });
 
+      if (admin.length === 0) {
+        toast.error("Login failed");
+      }
+
       localStorage.setItem(
         "user",
         JSON.stringify({ ...admin[0], password: "" })
