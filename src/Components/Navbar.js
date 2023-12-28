@@ -58,11 +58,20 @@ function Navbar() {
             Consul
           </a>
         </li>
-        <li>
-          <a href="#schedule" className="navbar-links">
-            Schedule
-          </a>
-        </li>
+
+        {user.role === "user" ? (
+          <li>
+            <a href="/dashboard/user" className="navbar-links">
+              Schedule
+            </a>
+          </li>
+        ) : user.role === "admin" ? null : (
+          <li>
+            <a href="/login" className="navbar-links">
+              Schedule
+            </a>
+          </li>
+        )}
       </ul>
 
       {user ? (
