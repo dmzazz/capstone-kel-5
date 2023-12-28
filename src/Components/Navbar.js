@@ -56,6 +56,11 @@ function Navbar() {
             Doctors
           </a>
         </li>
+        <li>
+          <a href="#schedule" className="navbar-links">
+            Schedule
+          </a>
+        </li>
       </ul>
 
       <Link to="/login">
