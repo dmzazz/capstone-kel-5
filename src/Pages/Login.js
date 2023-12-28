@@ -14,7 +14,11 @@ const Login = () => {
       const data = res.data;
 
       const user = data.filter((user) => {
-        return user.username === username && user.password === password;
+        return (
+          user.username === username &&
+          user.password === password &&
+          user.role === "user"
+        );
       });
 
       localStorage.setItem(

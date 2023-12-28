@@ -14,7 +14,9 @@ const AdminLogin = () => {
 
       const admin = data.filter((admin) => {
         return (
-          admin.username === adminUsername && admin.password === adminPassword
+          admin.username === adminUsername &&
+          admin.password === adminPassword &&
+          admin.role === "admin"
         );
       });
 
