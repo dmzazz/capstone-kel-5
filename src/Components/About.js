@@ -15,9 +15,9 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Selamat datang di Health Plus, mitra tepercaya untuk Anda layanan kesehatan yang terjangkau dan personal. 
-          Para Dokter ahli kami menawarkan konsultasi online dan layanan khusus, dengan prioritas utama pada kesejahteraan Anda. 
-          Bergabunglah dengan kami dalam perjalanan ini menuju diri yang lebih sehat dan sejahtera bagi Anda.
+          Selamat datang di Health Plus, tempat di mana kami menghadirkan solusi inovatif untuk Health Plus kesehatan mental Anda.
+          Kami menyadari betapa pentingnya menjaga kesehatan mental. Oleh karena itu, kami dengan bangga mempersembahkan platform ini 
+          sebagai teman setia Anda dalam perjalanan menuju kesejahteraan mental yang optimal.
         </p>
 
         <h4 className="about-text-title">Your Solutions</h4>
