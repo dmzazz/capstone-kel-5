@@ -75,7 +75,7 @@ function Footer() {
       </div>
 
       <div className="ft-copyright">
-        <p>© 2023 SelfCare. All rights reserved.</p>
+        <p>Since 2023©</p>
 
         <ul className="ft-social-links">
           <li>
