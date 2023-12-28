@@ -1,31 +1,57 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 const AdminLogin = () => {
   const [adminUsername, setAdminUsername] = useState("");
-  const [adminId, setAdminId] = useState("");
   const [adminPassword, setAdminPassword] = useState("");
-  const [formComplete, setFormComplete] = useState(false);
 
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (adminUsername && adminId && adminPassword) {
-      // Proses login admin
-      setFormComplete(true);
-      // Lakukan autentikasi atau operasi login admin di sini
-      navigate("/Dashboard")
-    } else {
-      alert("Form belum lengkap!");
+    try {
+      const res = await axios.get("http://localhost:8000/user");
+      const data = res.data;
+
+      const admin = data.filter((admin) => {
+        return (
+          admin.username === adminUsername && admin.password === adminPassword
+        );
+      });
+
+      console.log(admin);
+
+      localStorage.setItem(
+        "user",
+        JSON.stringify({ ...admin[0], password: "" })
+      );
+
+      if (admin.length > 0) {
+        toast.success("Login success");
+        window.location.href = "/dashboard/admin";
+      }
+    } catch (error) {
+      console.log(error);
     }
   };
 
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      window.location.href = "/";
+    }
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-blue-500">
-      <form onSubmit={handleSubmit} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+      >
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="adminUsername">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="adminUsername"
+          >
             Username
           </label>
           <input
@@ -37,21 +63,11 @@ const AdminLogin = () => {
             onChange={(e) => setAdminUsername(e.target.value)}
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="adminId">
-            ID Admin
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="adminId"
-            type="text"
-            placeholder="Admin ID"
-            value={adminId}
-            onChange={(e) => setAdminId(e.target.value)}
-          />
-        </div>
         <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="adminPassword">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="adminPassword"
+          >
             Password
           </label>
           <input
@@ -64,10 +80,12 @@ const AdminLogin = () => {
           />
         </div>
         <div className="flex items-center justify-between">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
             Login
           </button>
-          {formComplete && <p className="text-green-500 text-sm">Login berhasil!</p>}
         </div>
       </form>
     </div>
