@@ -15,9 +15,9 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Selamat datang di Health Plus, mitra tepercaya Anda untuk layanan kesehatan yang terjangkau dan personal. 
-          Dokter-dokter ahli kami menawarkan konsultasi online dan layanan khusus, dengan prioritas utama pada kesejahteraan Anda. 
-          Bergabunglah dengan kami dalam perjalanan ini menuju diri yang lebih sehat bagi Anda.
+          Selamat datang di Health Plus, mitra tepercaya untuk Anda layanan kesehatan yang terjangkau dan personal. 
+          Para Dokter ahli kami menawarkan konsultasi online dan layanan khusus, dengan prioritas utama pada kesejahteraan Anda. 
+          Bergabunglah dengan kami dalam perjalanan ini menuju diri yang lebih sehat dan sejahtera bagi Anda.
         </p>
 
         <h4 className="about-text-title">Your Solutions</h4>
@@ -25,7 +25,7 @@ function About() {
         <SolutionStep
           title="Pilih Dokter"
           description="
-          Temukan spesialis yang sempurna untuk Anda dan booking dengan mudah di Health Plus. Dokter-dokter ahli mengutamakan kesehatan Anda, menawarkan perawatan yang disesuaikan."
+          Temukan spesialis yang sempurna untuk Anda dan reservasi dengan mudah di Health Plus. Dokter-dokter ahli mengutamakan kesehatan Anda, menawarkan perawatan yang disesuaikan."
         />
 
         <SolutionStep
