@@ -20,8 +20,6 @@ const AdminLogin = () => {
         );
       });
 
-      console.log(admin);
-
       localStorage.setItem(
         "user",
         JSON.stringify({ ...admin[0], password: "" })

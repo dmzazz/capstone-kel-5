@@ -54,7 +54,7 @@ function Navbar() {
           </a>
         </li> */}
         <li>
-          <a href="#doctors" className="navbar-links">
+          <a href="/appointment" className="navbar-links">
             Consul
           </a>
         </li>

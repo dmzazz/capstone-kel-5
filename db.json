@@ -25,58 +25,32 @@
       "gender": "male"
     }
   ],
-  "roleaccess": [
-    {
-      "role": "admin",
-      "menu": "customer",
-      "haveadd": true,
-      "haveedit": true,
-      "havedelete": true
-    },
-    {
-      "role": "admin",
-      "menu": "supplier",
-      "haveadd": true,
-      "haveedit": true,
-      "havedelete": true
-    },
-    {
-      "role": "user",
-      "menu": "customer",
-      "haveadd": false,
-      "haveedit": false,
-      "havedelete": false
-    },
-    {
-      "role": "user1",
-      "menu": "customer",
-      "haveadd": false,
-      "haveedit": false,
-      "havedelete": false
-    }
-  ],
   "doctors": [
     {
-      "code": "awwdawd edited",
-      "name": "awdawd",
-      "email": "awdwad asdasd",
+      "code": "asd12d31",
+      "name": "Dr. Ahmad",
+      "email": "ahmad@gmail.com",
       "id": 1
     }
   ],
-  "pelanggan": [
+  "konsuls": [
     {
-      "id": 1,
-      "username": "pelanggan1",
-      "password": "password1",
-      "role": "user",
-      "alamat": "Alamat 1"
+      "name": "Fullname",
+      "email": "email@email.com",
+      "keluhan": "Mental illnes",
+      "doctor": "Dr. Ahmad",
+      "linkMeet": "https://meet.google.com/8v9my",
+      "date": "2023-12-28",
+      "id": 1
     },
     {
-      "id": 2,
-      "username": "pelanggan2",
-      "password": "password2",
-      "role": "user",
-      "alamat": "Alamat 2"
+      "name": "Fullname",
+      "email": "email@email.com",
+      "keluhan": "mental healt\n",
+      "doctor": "Dr. Ahmad",
+      "linkMeet": "https://meet.google.com/7li8t",
+      "date": "2023-12-28",
+      "id": 2
     }
   ]
 }

@@ -17,11 +17,14 @@ const DashboardAdmin = () => {
     email: "",
   });
   const [doctor, setDoctor] = useState([]);
+  const [konsul, setKonsul] = useState([]);
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
-    if (user) {
+    if (user && user.role === "admin") {
       setUser(user);
+    } else {
+      window.location.href = "/";
     }
   }, []);
 
@@ -44,8 +47,20 @@ const DashboardAdmin = () => {
     }
   };
 
+  const getKonsul = async () => {
+    try {
+      const res = await axios.get("http://localhost:8000/konsuls");
+      const data = res.data;
+
+      setKonsul(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getDoctor();
+    getKonsul();
   }, []);
 
   const handleAddDoctor = async () => {
@@ -194,6 +209,39 @@ const DashboardAdmin = () => {
           </table>
         </div>
       </div>
+      {konsul.length > 0 && (
+        <div className="card mt-5">
+          <div className="card-header">
+            <h3>Daftar Konsultasi dengan Doctor</h3>
+          </div>
+          <div className="card-body">
+            <table className="table table-bordered mt-3">
+              <thead className="bg-dark text-white">
+                <tr>
+                  <th>Nama Pasien</th>
+                  <th>Email Pasien</th>
+                  <th>Doctor</th>
+                  <th>Keluhan</th>
+                  <th>Tanggal</th>
+                  <th>Link Meet</th>
+                </tr>
+              </thead>
+              <tbody>
+                {konsul.map((konsul) => (
+                  <tr key={konsul.id}>
+                    <td>{konsul.name}</td>
+                    <td>{konsul.email}</td>
+                    <td>{konsul.doctor}</td>
+                    <td>{konsul.keluhan}</td>
+                    <td>{konsul.date}</td>
+                    <td>{konsul.linkMeet}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
       <Modal show={isModal} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>
