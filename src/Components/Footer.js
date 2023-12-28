@@ -24,19 +24,13 @@ function Footer() {
           <p className="ft-list-title">Services</p>
           <ul className="ft-list-items">
             <li>
-              <a href="#services">Emergency Care</a>
+              <a href="#services">Knowledge Psicologic</a>
             </li>
             <li>
-              <a href="#services">Heart Disease</a>
+              <a href="#services">Professional Doctor</a>
             </li>
             <li>
-              <a href="#services">Dental Care</a>
-            </li>
-            <li>
-              <a href="#services">Prescription</a>
-            </li>
-            <li>
-              <a href="#services">Insights for doctors</a>
+              <a href="#services">Schedule Concultation</a>
             </li>
           </ul>
         </div>
@@ -75,9 +69,6 @@ function Footer() {
             </li>
             <li>
               <a href="tel:+022 5454 5252">+022 5454 5252</a>
-            </li>
-            <li>
-              <a href="tel:+022 2326 6232">+022 2326 6232</a>
             </li>
           </ul>
         </div>
