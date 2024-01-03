@@ -9,6 +9,7 @@ import Legal from "./Pages/Legal";
 import NotFound from "./Pages/NotFound";
 import Appointment from "./Pages/Appointment";
 import Consul from "./Pages/Consul";
+import DashboardAdmin from "./Components/DashboardAdmin";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
           <Route path="/consul" element={<Consul />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/admin" element={<DashboardAdmin />} />
+          <Route path="/dashboard/user" element={<Dashboard />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="*" element={<NotFound />} />
