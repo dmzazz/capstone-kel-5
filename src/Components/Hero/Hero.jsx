@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
+import Doctor from "../../assets/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
-import "../Styles/Hero.css";
+import { useNavigate } from "react-router-dom";
+import "../../styles/Hero.css";
 
 function Hero() {
   const navigate = useNavigate();
@@ -37,18 +37,9 @@ function Hero() {
       <div className="hero-section">
         <div className="text-section">
           <p className="text-headline">SelfCare❤️</p>
-          <h2 className="text-title">
-          Bersama Menuju Kesejahteraan
-          </h2>
-          <p className="text-descritpion">
-          
-"Kami berkomitmen untuk mendukung Anda dalam perjalanan kesehatan mental Anda. Mulai hari ini dengan langkah kecil menuju perubahan yang positif."
-          </p>
-          <button
-            className="text-appointment-btn"
-            type="button"
-            onClick={handleBookAppointmentClick}
-          >
+          <h2 className="text-title">Bersama Menuju Kesejahteraan</h2>
+          <p className="text-descritpion">"Kami berkomitmen untuk mendukung Anda dalam perjalanan kesehatan mental Anda. Mulai hari ini dengan langkah kecil menuju perubahan yang positif."</p>
+          <button className="text-appointment-btn" type="button" onClick={handleBookAppointmentClick}>
             <FontAwesomeIcon icon={faCalendarCheck} /> Jadwalkan Konsultasi
           </button>
         </div>
@@ -58,10 +49,7 @@ function Hero() {
         </div>
       </div>
 
-      <div
-        onClick={scrollToTop}
-        className={`scroll-up ${goUp ? "show-scroll" : ""}`}
-      >
+      <div onClick={scrollToTop} className={`scroll-up ${goUp ? "show-scroll" : ""}`}>
         <FontAwesomeIcon icon={faAngleUp} />
       </div>
     </div>

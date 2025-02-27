@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-function DoctorCard(props) {
+function CardDoctor(props) {
   return (
     <div className="dt-card">
       <img src={props.img} alt={props.name} className="dt-card-img" />
@@ -20,4 +20,4 @@ function DoctorCard(props) {
   );
 }
 
-export default DoctorCard;
+export default CardDoctor;

@@ -27,10 +27,16 @@
   ],
   "doctors": [
     {
-      "code": "asd12d31",
+      "code": "Doc001",
       "name": "Dr. Ahmad",
       "email": "ahmad@gmail.com",
       "id": 1
+    },
+    {
+      "code": "Doc002",
+      "name": "Dimas",
+      "email": "dimas@gmail.com",
+      "id": 2
     }
   ],
   "konsuls": [

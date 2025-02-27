@@ -1,5 +1,5 @@
 import React from "react";
-import ConsulDoctor from "../Components/ConsulDoctor";
+import ConsulDoctor from "../components/ConsulDoctor";
 
 const Consul = () => {
   return (

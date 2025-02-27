@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../Styles/Login.css";
+import "../../styles/Login.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 
@@ -94,7 +94,7 @@ const Login = () => {
         </div>
         <p className="text-sm mt-4">
           Login sebagai admin klik{" "}
-          <a href="/adminlogin" className="text-blue-500 hover:underline">
+          <a href="/admin" className="text-blue-500 hover:underline">
             here
           </a>
         </p>

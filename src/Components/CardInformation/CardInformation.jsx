@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function InformationCard(props) {
+function CardInformation(props) {
   return (
     <div className="info-cards">
       <span className="info-card-icon">
@@ -13,4 +13,4 @@ function InformationCard(props) {
   );
 }
 
-export default InformationCard;
+export default CardInformation;

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/AppointmentForm.css";
+import "../styles/AppointmentForm.css";
 import { ToastContainer, toast } from "react-toastify";
-import doctorForm from "../Assets/book-doctor-appointment-form.png";
+import doctorForm from "../assets/book-doctor-appointment-form.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
-function AppointmentForm() {
+function Appointment() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
@@ -39,8 +39,8 @@ function AppointmentForm() {
 
     if (!patientNumber.trim()) {
       errors.patientNumber = "Patient phone number is required";
-    } else if (patientNumber.trim().length !== 10) {
-      errors.patientNumber = "Patient phone number must be of 10 digits";
+    } else if (patientNumber.trim().length >= 14) {
+      errors.patientNumber = "Patient phone number cannot be more than 14 digits";
     }
 
     if (patientGender === "default") {
@@ -135,99 +135,55 @@ function AppointmentForm() {
           <form className="form-content" onSubmit={handleSubmit}>
             <label>
               Patient Full Name:
-              <input
-                type="text"
-                value={patientName}
-                onChange={(e) => setPatientName(e.target.value)}
-                required
-              />
-              {formErrors.patientName && (
-                <p className="error-message">{formErrors.patientName}</p>
-              )}
+              <input type="text" value={patientName} onChange={(e) => setPatientName(e.target.value)} required />
+              {formErrors.patientName && <p className="error-message">{formErrors.patientName}</p>}
             </label>
 
             <label>
               Patient Email:
-              <input
-                type="email"
-                value={patientEmail}
-                onChange={(e) => setPatientEmail(e.target.value)}
-                required
-              />
-              {formErrors.patientEmail && (
-                <p className="error-message">{formErrors.patientEmail}</p>
-              )}
+              <input type="email" value={patientEmail} onChange={(e) => setPatientEmail(e.target.value)} required />
+              {formErrors.patientEmail && <p className="error-message">{formErrors.patientEmail}</p>}
             </label>
 
             <label>
               Patient Phone Number:
-              <input
-                type="text"
-                value={patientNumber}
-                onChange={(e) => setPatientNumber(e.target.value)}
-                required
-              />
-              {formErrors.patientNumber && (
-                <p className="error-message">{formErrors.patientNumber}</p>
-              )}
+              <input type="number" value={patientNumber} onChange={(e) => setPatientNumber(e.target.value)} required />
+              {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
             </label>
 
             <label>
               Patient Gender:
-              <select
-                value={patientGender}
-                onChange={(e) => setPatientGender(e.target.value)}
-                required
-              >
+              <select value={patientGender} onChange={(e) => setPatientGender(e.target.value)} required>
                 <option value="default">Select</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="private">I will inform Doctor only</option>
               </select>
-              {formErrors.patientGender && (
-                <p className="error-message">{formErrors.patientGender}</p>
-              )}
+              {formErrors.patientGender && <p className="error-message">{formErrors.patientGender}</p>}
             </label>
 
             <label>
               Preferred Appointment Time:
-              <input
-                type="datetime-local"
-                value={appointmentTime}
-                onChange={(e) => setAppointmentTime(e.target.value)}
-                required
-              />
-              {formErrors.appointmentTime && (
-                <p className="error-message">{formErrors.appointmentTime}</p>
-              )}
+              <input type="datetime-local" value={appointmentTime} onChange={(e) => setAppointmentTime(e.target.value)} required />
+              {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
             </label>
 
             <label>
               Preferred Mode:
-              <select
-                value={preferredMode}
-                onChange={(e) => setPreferredMode(e.target.value)}
-                required
-              >
+              <select value={preferredMode} onChange={(e) => setPreferredMode(e.target.value)} required>
                 <option value="default">Select</option>
                 <option value="voice">Voice Call</option>
                 <option value="video">Video Call</option>
               </select>
-              {formErrors.preferredMode && (
-                <p className="error-message">{formErrors.preferredMode}</p>
-              )}
+              {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
             </label>
 
             <button type="submit" className="text-appointment-btn mt-4">
               Confirm Appointment
             </button>
 
-            <p
-              className="success-message"
-              style={{ display: isSubmitted ? "block" : "none" }}
-            >
-              Appointment details has been sent to the patients phone number via
-              SMS.
+            <p className="success-message" style={{ display: isSubmitted ? "block" : "none" }}>
+              Appointment details has been sent to the patients phone number via SMS.
             </p>
           </form>
         </div>
@@ -237,4 +193,4 @@ function AppointmentForm() {
   );
 }
 
-export default AppointmentForm;
+export default Appointment;

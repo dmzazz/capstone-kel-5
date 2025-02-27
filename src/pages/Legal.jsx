@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/LegalDocs.css";
+import "../styles/LegalDocs.css";
 
-function LegalDocs() {
+function Legal() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
@@ -11,14 +11,14 @@ function LegalDocs() {
     <div className="legal-section-title">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Health <span className="legal-siteSign">+</span>
+          SelfCare <span className="legal-siteSign">+</span>
         </Link>
       </h1>
 
       <div className="legal-text-content">
         <p className="legal-title">Informasi Umum</p>
         <p className="legal-description">
-          Selamat datang di Health Plus, platform layanan kesehatan online
+          Selamat datang di SelfCare Plus, platform layanan kesehatan online
           tepercaya Anda. Misi kami adalah menyediakan layanan kesehatan yang
           mudah diakses dan dipersonalisasi untuk individu yang mencari
           saran medis dan perawatan ahli. Dengan menggunakan platform kami, Anda
@@ -37,7 +37,7 @@ function LegalDocs() {
 
         <p className="legal-title">Syarat Layanan</p>
         <p className="legal-description">
-          Dengan menggunakan Health Plus, Anda menyetujui Syarat Layanan kami.
+          Dengan menggunakan SelfCare Plus, Anda menyetujui Syarat Layanan kami.
           Ini mencakup panduan untuk menggunakan platform kami, berinteraksi
           dengan dokter, dan tanggung jawab kedua belah pihak. Penting untuk
           memahami ketentuan ini untuk memastikan pengalaman yang lancar bagi
@@ -55,7 +55,7 @@ function LegalDocs() {
 
         <p className="legal-title">Cara Kerjanya</p>
         <p className="legal-description">
-          Health Plus dirancang untuk menyederhanakan akses ke layanan kesehatan.
+          SelfCare Plus dirancang untuk menyederhanakan akses ke layanan kesehatan.
           Anda dapat memilih spesialis, menjadwalkan janji, dan melakukan
           konsultasi virtual. Spesialis kami menawarkan saran dan rencana
           perawatan yang dipersonalisasi sesuai dengan kebutuhan Anda. Harap
@@ -65,10 +65,10 @@ function LegalDocs() {
       </div>
 
       <div className="legal-footer">
-        <p>© 2023 Health+. Seluruh hak cipta dilindungi.</p>
+        <p>© 2023 SelfCare+. Seluruh hak cipta dilindungi.</p>
       </div>
     </div>
   );
 }
 
-export default LegalDocs;
+export default Legal;

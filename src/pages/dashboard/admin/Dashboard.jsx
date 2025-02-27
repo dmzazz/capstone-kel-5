@@ -65,11 +65,7 @@ const DashboardAdmin = () => {
 
   const handleAddDoctor = async () => {
     try {
-      if (
-        postDoctor.code === "" ||
-        postDoctor.name === "" ||
-        postDoctor.email === ""
-      ) {
+      if (postDoctor.code === "" || postDoctor.name === "" || postDoctor.email === "") {
         toast.error("Isi semua form yang ada");
         return;
       }
@@ -116,10 +112,7 @@ const DashboardAdmin = () => {
 
   const handleEditDoctor = async () => {
     try {
-      const res = await axios.put(
-        `http://localhost:8000/doctors/${postDoctor.id}`,
-        postDoctor
-      );
+      const res = await axios.put(`http://localhost:8000/doctors/${postDoctor.id}`, postDoctor);
 
       toast.success("Edit doctor success");
 
@@ -190,16 +183,10 @@ const DashboardAdmin = () => {
                   <td>{doctor.name}</td>
                   <td>{doctor.email}</td>
                   <td className="flex gap-2">
-                    <button
-                      onClick={() => handleEdit(doctor.id)}
-                      className="btn btn-warning"
-                    >
+                    <button onClick={() => handleEdit(doctor.id)} className="btn btn-warning">
                       Edit
                     </button>
-                    <button
-                      onClick={() => handleDelete(doctor.id)}
-                      className="btn btn-danger"
-                    >
+                    <button onClick={() => handleDelete(doctor.id)} className="btn btn-danger">
                       Delete
                     </button>
                   </td>
@@ -244,49 +231,23 @@ const DashboardAdmin = () => {
       )}
       <Modal show={isModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
-            {isEdit ? "Edit data doctor" : "Tambah doctor baru"}
-          </Modal.Title>
+          <Modal.Title>{isEdit ? "Edit data doctor" : "Tambah doctor baru"}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="form-group">
             <label>Code</label>
-            <input
-              type="text"
-              className="form-control"
-              value={postDoctor.code}
-              onChange={(e) =>
-                setPostDoctor({ ...postDoctor, code: e.target.value })
-              }
-            ></input>
+            <input type="text" className="form-control" value={postDoctor.code} onChange={(e) => setPostDoctor({ ...postDoctor, code: e.target.value })}></input>
             <label>Name</label>
-            <input
-              type="text"
-              className="form-control"
-              value={postDoctor.name}
-              onChange={(e) =>
-                setPostDoctor({ ...postDoctor, name: e.target.value })
-              }
-            ></input>
+            <input type="text" className="form-control" value={postDoctor.name} onChange={(e) => setPostDoctor({ ...postDoctor, name: e.target.value })}></input>
             <label>Email</label>
-            <input
-              type="email"
-              className="form-control"
-              value={postDoctor.email}
-              onChange={(e) =>
-                setPostDoctor({ ...postDoctor, email: e.target.value })
-              }
-            ></input>
+            <input type="email" className="form-control" value={postDoctor.email} onChange={(e) => setPostDoctor({ ...postDoctor, email: e.target.value })}></input>
           </div>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Tutup
           </Button>
-          <Button
-            variant="primary"
-            onClick={isEdit ? handleEditDoctor : handleAddDoctor}
-          >
+          <Button variant="primary" onClick={isEdit ? handleEditDoctor : handleAddDoctor}>
             {isEdit ? "Submit Edit" : "Submit"}
           </Button>
         </Modal.Footer>

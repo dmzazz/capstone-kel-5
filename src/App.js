@@ -1,37 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Login from "./Pages/Login";
-import AdminLogin from "./Pages/AdminLogin";
-import Dashboard from "./Components/Dashboard";
-import Home from "./Pages/Home";
-import Legal from "./Pages/Legal";
-import NotFound from "./Pages/NotFound";
-import Appointment from "./Pages/Appointment";
-import Consul from "./Pages/Consul";
-import DashboardAdmin from "./Components/DashboardAdmin";
+import UserLogin from "./pages/user/login";
+import AdminLogin from "./pages/admin/login";
+import Dashboard from "./pages/dashboard/user/Dashboard";
+import Home from "./pages/Home";
+import Legal from "./pages/Legal";
+import NotFound from "./pages/NotFound";
+import Appointment from "./pages/Appointment";
+import Consul from "./pages/Consul";
+import DashboardAdmin from "./pages/dashboard/admin/Dashboard";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        {/* Navigasi menggunakan Link */}
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Login</Link>
-            </li>
-            <li>
-              <Link to="../Pages/Home.js">Home</Link>
-            </li>
-          </ul>
-        </nav> */}
-
         {/* Konten aplikasi */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/adminlogin" element={<AdminLogin />} />
+          <Route path="/user" element={<UserLogin />} />
+          <Route path="/admin" element={<AdminLogin />} />
           <Route path="/consul" element={<Consul />} />
           <Route path="/dashboard/admin" element={<DashboardAdmin />} />
           <Route path="/dashboard/user" element={<Dashboard />} />
@@ -45,18 +33,3 @@ function App() {
 }
 
 export default App;
-
-// import Dashboard from './Components/Dashboard';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className='container'>
-//       <div className='wrapper'>
-//         <Dashboard></Dashboard>
-//       </div>
-//     </div>
-//   );
-// }
-// export default App;

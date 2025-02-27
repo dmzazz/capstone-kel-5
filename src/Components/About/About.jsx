@@ -1,7 +1,7 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
-import SolutionStep from "./SolutionStep";
-import "../Styles/About.css";
+import Doctor from "../../assets/doctor-group.png";
+import SolutionStep from "../SolutionStep";
+import "../../styles/About.css";
 
 function About() {
   return (
@@ -15,8 +15,7 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Selamat datang di Health Plus, mitra tepercaya untuk Anda layanan kesehatan yang terjangkau dan personal. 
-          Para Dokter ahli kami menawarkan konsultasi online dan layanan khusus, dengan prioritas utama pada kesejahteraan Anda. 
+          Selamat datang di Health Plus, mitra tepercaya untuk Anda layanan kesehatan yang terjangkau dan personal. Para Dokter ahli kami menawarkan konsultasi online dan layanan khusus, dengan prioritas utama pada kesejahteraan Anda.
           Bergabunglah dengan kami dalam perjalanan ini menuju diri yang lebih sehat dan sejahtera bagi Anda.
         </p>
 
@@ -28,10 +27,7 @@ function About() {
           Temukan spesialis yang sempurna untuk Anda dan reservasi dengan mudah di Health Plus. Dokter-dokter ahli mengutamakan kesehatan Anda, menawarkan perawatan yang disesuaikan."
         />
 
-        <SolutionStep
-          title="Membuat Judul"
-          description="Pilih dokter yang akan menjadi konsultor anda, dan biarkan tim medis kami yang berdedikasi memastikan kesejahteraan Anda dengan perawatan yang dipersonalisasi."
-        />
+        <SolutionStep title="Membuat Judul" description="Pilih dokter yang akan menjadi konsultor anda, dan biarkan tim medis kami yang berdedikasi memastikan kesejahteraan Anda dengan perawatan yang dipersonalisasi." />
 
         <SolutionStep
           title="Temukan Solusi"
