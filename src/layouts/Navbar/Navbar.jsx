@@ -59,7 +59,7 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/dashboard/user" className="navbar-links">
+          <a href="#schedule" className="navbar-links">
             Schedule
           </a>
         </li>
