@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.631533bc.css",
+    "main.js": "/static/js/main.371b0553.js",
+    "static/media/book-doctor-appointment-form.png": "/static/media/book-doctor-appointment-form.286bd676372392d295b8.png",
+    "static/media/doctor-picture.png": "/static/media/doctor-picture.0261bb4efe7a9075c56a.png",
+    "static/media/doctor-group.png": "/static/media/doctor-group.01394386d8270bd40bc1.png",
+    "static/media/doctor-book-appointment.png": "/static/media/doctor-book-appointment.edb3f4ac282ff3fefaec.png",
+    "index.html": "/index.html",
+    "main.631533bc.css.map": "/static/css/main.631533bc.css.map",
+    "main.371b0553.js.map": "/static/js/main.371b0553.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.631533bc.css",
+    "static/js/main.371b0553.js"
+  ]
+}
