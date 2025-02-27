@@ -1,26 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCommentDots, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import "../Styles/Navbar.css";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import "../../styles/Navbar.css";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
+import Dropdown from "react-bootstrap/Dropdown";
 
 function Navbar() {
+  const [user, setUser] = useState("");
   const [nav, setNav] = useState(false);
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const openNav = () => {
     setNav(!nav);
   };
 
-  const handleChatBtnClick = () => {
-    if (!isButtonDisabled) {
-      toast.info("Experiencing high traffic, Please wait a moment.", {
-        position: toast.POSITION.TOP_CENTER,
-        onOpen: () => setIsButtonDisabled(true),
-        onClose: () => setIsButtonDisabled(false),
-      });
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
+      setUser(user);
     }
+  }, []);
+
+  const logout = () => {
+    localStorage.removeItem("user");
+    window.location.href = "/";
   };
 
   return (
@@ -52,7 +54,7 @@ function Navbar() {
           </a>
         </li> */}
         <li>
-          <a href="#doctors" className="navbar-links">
+          <a href="/appointment" className="navbar-links">
             Consul
           </a>
         </li>
@@ -63,11 +65,26 @@ function Navbar() {
         </li>
       </ul>
 
-      <Link to="/login">
-        <button className="navbar-btn" type="button">
-          Login
-        </button>
-      </Link>
+      {user ? (
+        <Dropdown>
+          <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+            {user.name}
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href={user.role === "admin" ? "/dashboard/admin" : "/dashboard/user"}>{user.role === "admin" ? "Dashboad Admin" : "Dashboard"}</Dropdown.Item>
+            <Dropdown.Item href="#/action-3" onClick={logout}>
+              <span>Logout</span>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      ) : (
+        <Link to="/user">
+          <button className="navbar-btn" type="button">
+            Login
+          </button>
+        </Link>
+      )}
 
       {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
@@ -96,11 +113,19 @@ function Navbar() {
               Consul
             </a>
           </li>
-          <li>
-            <a onClick={openNav} href="#schedule">
-              Schedule
-            </a>
-          </li>
+          {user.role === "user" ? (
+            <li>
+              <a href="/dashboard/user" className="navbar-links">
+                Schedule
+              </a>
+            </li>
+          ) : user.role === "admin" ? null : (
+            <li>
+              <a href="/login" className="navbar-links">
+                Schedule
+              </a>
+            </li>
+          )}
         </ul>
       </div>
 

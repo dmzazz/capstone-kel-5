@@ -1,7 +1,7 @@
 import React from "react";
-import InformationCard from "./InformationCard";
+import CardInformation from "../CardInformation/CardInformation";
 import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
-import "../Styles/Info.css";
+import "../../styles/Info.css";
 
 function Info() {
   return (
@@ -11,16 +11,13 @@ function Info() {
           <span>Apa yang dapat kami lakukan</span>
         </h3>
         <p className="info-description">
-        Kami berkomitmen untuk menyediakan akses mudah dan cepat ke layanan kesehatan mental berkualitas. 
-        Melalui platform kami, Anda dapat dengan nyaman berbicara dengan dokter psikologi berpengalaman. 
-        Kami memberikan saran medis, resep dan memudahkan pencatatan catatan kesehatan Anda. Tujuan kami 
-        adalah memberikan layanan kesehatan sesuai permintaan yang menjawab kebutuhan kesehatan mental Anda, 
-        semuanya dengan kenyamanan di ujung jari Anda.
+          Kami berkomitmen untuk menyediakan akses mudah dan cepat ke layanan kesehatan mental berkualitas. Melalui platform kami, Anda dapat dengan nyaman berbicara dengan dokter psikologi berpengalaman. Kami memberikan saran medis, resep
+          dan memudahkan pencatatan catatan kesehatan Anda. Tujuan kami adalah memberikan layanan kesehatan sesuai permintaan yang menjawab kebutuhan kesehatan mental Anda, semuanya dengan kenyamanan di ujung jari Anda.
         </p>
       </div>
 
       <div className="info-cards-content">
-        <InformationCard
+        <CardInformation
           title="Knowledge Psicologic"
           description="Sistem Informasi Psikologi kami didesain untuk menjadi sumber dukungan yang handal
           dalam mengelola informasi kesehatan mental.
@@ -29,7 +26,7 @@ function Info() {
           icon={faTruckMedical}
         />
 
-        <InformationCard
+        <CardInformation
           title="Professional Doctor"
           description="Tim ahli psikologi berpengalaman kami menggunakan metode terapi terkini dan teknik evaluasi
           untuk memahami serta mendukung kesejahteraan mental Anda secara menyeluruh.
@@ -39,7 +36,7 @@ function Info() {
           icon={faHeartPulse}
         />
 
-        <InformationCard
+        <CardInformation
           title="Schedule Concultation"
           description="Tim kami memberikan penerapan jadwal dengan pengelolaan baik
           sesuai dengan permintaan client. Tim kami berdedikasi tinggi sebagai jembatan untuk para client
