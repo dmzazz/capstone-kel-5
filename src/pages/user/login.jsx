@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../styles/Login.css";
+import "../../styles/login.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 

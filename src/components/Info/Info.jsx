@@ -1,7 +1,7 @@
 import React from "react";
 import CardInformation from "../CardInformation/CardInformation";
 import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
-import "../../styles/Info.css";
+import "../../styles/info.css";
 
 function Info() {
   return (

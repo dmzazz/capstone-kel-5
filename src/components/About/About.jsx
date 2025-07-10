@@ -1,7 +1,7 @@
 import React from "react";
 import Doctor from "../../assets/doctor-group.png";
 import SolutionStep from "../SolutionStep";
-import "../../styles/About.css";
+import "../../styles/about.css";
 
 function About() {
   return (

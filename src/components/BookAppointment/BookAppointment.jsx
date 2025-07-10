@@ -2,7 +2,7 @@ import React from "react";
 import Doctor from "../../assets/doctor-book-appointment.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import "../../styles/BookAppointment.css";
+import "../../styles/bookappointment.css";
 
 function BookAppointment() {
   return (

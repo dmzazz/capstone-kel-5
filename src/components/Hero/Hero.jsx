@@ -3,7 +3,7 @@ import Doctor from "../../assets/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import "../../styles/Hero.css";
+import "../../styles/hero.css";
 
 function Hero() {
   const navigate = useNavigate();

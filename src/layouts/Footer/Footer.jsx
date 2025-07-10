@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/Footer.css";
+import "../../styles/footer.css";
 import SubscribeNewsletter from "../../components/SubscribeNewsletter/SubscribeNewsletter";
 import { Link } from "react-router-dom";
 

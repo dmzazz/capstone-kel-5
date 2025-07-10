@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/AppointmentForm.css";
+import "../styles/appointmentform.css";
 import { ToastContainer, toast } from "react-toastify";
 import doctorForm from "../assets/book-doctor-appointment-form.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
