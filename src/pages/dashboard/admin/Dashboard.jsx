@@ -38,7 +38,7 @@ const DashboardAdmin = () => {
 
   const getDoctor = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/doctors");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/doctors`);
       const data = res.data;
 
       setDoctor(data);
@@ -49,7 +49,7 @@ const DashboardAdmin = () => {
 
   const getKonsul = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/konsuls");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/konsuls`);
       const data = res.data;
 
       setKonsul(data);
@@ -70,7 +70,7 @@ const DashboardAdmin = () => {
         return;
       }
 
-      const res = await axios.post("http://localhost:8000/doctors", postDoctor);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/doctors`, postDoctor);
 
       toast.success("Add doctor success");
       getDoctor();
@@ -91,7 +91,7 @@ const DashboardAdmin = () => {
 
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete(`http://localhost:8000/doctors/${id}`);
+      const res = await axios.delete(`${process.env.REACT_APP_API_URL}/doctors/${id}`);
 
       toast.info("Delete doctor success");
 
@@ -103,7 +103,7 @@ const DashboardAdmin = () => {
   };
 
   const handleEdit = async (id) => {
-    const res = await axios.get(`http://localhost:8000/doctors/${id}`);
+    const res = await axios.get(`${process.env.REACT_APP_API_URL}/doctors/${id}`);
     const data = res.data;
     setIsEdit(true);
     setPostDoctor(data);
@@ -112,7 +112,7 @@ const DashboardAdmin = () => {
 
   const handleEditDoctor = async () => {
     try {
-      const res = await axios.put(`http://localhost:8000/doctors/${postDoctor.id}`, postDoctor);
+      const res = await axios.put(`${process.env.REACT_APP_API_URL}doctors/${postDoctor.id}`, postDoctor);
 
       toast.success("Edit doctor success");
 

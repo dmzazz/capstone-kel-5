@@ -35,7 +35,7 @@ const Dashboard = () => {
 
   const getDoctor = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/doctors");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/doctors`);
       const data = res.data;
 
       setDoctor(data);
@@ -46,7 +46,7 @@ const Dashboard = () => {
 
   const getKonsul = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/konsuls");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/konsuls`);
       const data = res.data;
 
       const isUser = data.filter((item) => item.email === user.email);
@@ -77,7 +77,7 @@ const Dashboard = () => {
         return;
       }
 
-      const res = await axios.post("http://localhost:8000/konsuls", {
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/konsuls`, {
         name: user.name,
         email: user.email,
         keluhan: keluhan,

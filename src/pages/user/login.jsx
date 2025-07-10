@@ -10,7 +10,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get("http://localhost:8000/user");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/user`);
       const data = res.data;
 
       const user = data.filter((user) => {
